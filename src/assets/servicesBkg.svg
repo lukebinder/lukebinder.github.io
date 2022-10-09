@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 3840 2160" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="2160" width="3840" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M-7.04397 2121.58L2639.47 1807.13L3926.63 1654.2" fill="#1a95c6" fill-rule="nonzero" opacity="1" stroke="#1a95c6" stroke-linecap="butt" stroke-linejoin="round" stroke-width="3"/>
+<path d="M1809.15 2692.35" fill="#7cc8e1" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M-49.9128-356.746L226.604-338.468L-33.9698 1820.72L-373.359 1094.08" fill="#287fb6" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M-19.7347 1817.47L-22.6592 1436.52L183.1-101.573L495.127-21.949" fill="#1a95c6" fill-rule="nonzero" opacity="0.776434" stroke="none"/>
+<path d="M-264.4 899.273L-261.173 899.273L-261.173 899.273L-264.4 899.273Z" fill="#287fb6" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M-2.05912 1.18432L3842.14 1.18432C3842.34 1.18432 3842.51 1.35009 3842.51 1.55456L3842.51 2167.32C3842.51 2167.52 3842.34 2167.69 3842.14 2167.69L-2.05912 2167.69C-2.2636 2167.69-2.42936 2167.52-2.42936 2167.32L-2.42936 1.55456C-2.42936 1.35009-2.2636 1.18432-2.05912 1.18432Z" fill="#ffffff" fill-rule="nonzero" opacity="0.370424" stroke="none"/>
+<path d="M2913.96 2570.79L2913.96 2570.79C2914.03 2570.79 2914.08 2570.84 2914.08 2570.91L2914.08 2571.13C2914.08 2571.2 2914.03 2571.25 2913.96 2571.25L2913.96 2571.25C2913.9 2571.25 2913.84 2571.2 2913.84 2571.13L2913.84 2570.91C2913.84 2570.84 2913.9 2570.79 2913.96 2570.79Z" fill="#ffffff" fill-rule="nonzero" opacity="0" stroke="none"/>
+</g>
+</svg>

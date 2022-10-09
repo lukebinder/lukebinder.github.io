@@ -1,0 +1,57 @@
+@use "../../variables";
+
+.ContactModal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0000006b;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: contactFade 0.3s ease-in-out forwards;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 425px;
+    padding: 20px;
+    background-color: white;
+
+    p:first-child {
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    a {
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      word-break: break-all;
+      &:hover {
+        color: variables.$primaryColor;
+      }
+    }
+    img {
+      max-width: 35px;
+      max-height: 35px;
+    }
+  }
+}
+
+@keyframes contactFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

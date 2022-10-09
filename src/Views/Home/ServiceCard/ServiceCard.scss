@@ -1,0 +1,296 @@
+@use "../../../variables";
+
+.ServiceCard {
+  background-color: white;
+  width: 300px;
+  height: 250px;
+
+  &__face {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px 20px 50px 20px;
+    flex-shrink: 0;
+    gap: 20px;
+    .ServiceCard__title {
+      font-weight: bold;
+      color: variables.$primaryColor;
+    }
+    .ServiceCard__read-more {
+      position: relative;
+      font-size: 0.9rem;
+      transition: all 0.3s ease-in-out;
+      font-weight: bold;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 1px;
+        bottom: -3px;
+        left: 0;
+        background-color: variables.$primaryColor;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    img {
+      align-self: flex-start;
+      height: 48px;
+      width: 48px;
+      margin-bottom: 25px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 0px 25px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__back--local-government-reform {
+    ul {
+      gap: 1px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    img {
+      transform: scale(1.15);
+    }
+
+    .ServiceCard__read-more {
+      color: variables.$primaryColor;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  border-bottom: 1px solid rgb(239, 239, 239);
+
+  &:last-child {
+    border: none;
+    display: none;
+  }
+
+  @media (min-width: 800px) {
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(5) {
+      border-right: 1px solid rgb(239, 239, 239);
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid rgb(220, 219, 219);
+        border-bottom: 1px solid rgb(220, 219, 219);
+        right: -1px;
+        bottom: -1px;
+      }
+    }
+    &:nth-child(7) {
+      border-right: 1px solid rgb(239, 239, 239);
+    }
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(8) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-left: 1px solid rgb(220, 219, 219);
+        border-top: 1px solid rgb(220, 219, 219);
+        top: -1px;
+        left: -1px;
+      }
+    }
+    &:nth-child(7),
+    &:nth-child(8) {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    &:nth-child(9) {
+      display: flex;
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+      border: none;
+      &::after {
+        border: none;
+      }
+
+      border-bottom: 1px solid rgb(239, 239, 239);
+    }
+
+    &:nth-child(7),
+    &:nth-child(8) {
+      border-bottom: none;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(7),
+    &:nth-child(8) {
+      border-right: 1px solid rgb(239, 239, 239);
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid rgb(220, 219, 219);
+        border-bottom: 1px solid rgb(220, 219, 219);
+        right: -1px;
+        bottom: -1px;
+      }
+    }
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(8) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-left: 1px solid rgb(220, 219, 219);
+        border-top: 1px solid rgb(220, 219, 219);
+        top: -1px;
+        left: -1px;
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid rgb(220, 219, 219);
+        border-bottom: 1px solid rgb(220, 219, 219);
+        right: -1px;
+        bottom: -1px;
+        top: unset;
+        left: unset;
+      }
+    }
+    &:nth-child(6) {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-left: 1px solid rgb(211, 211, 211);
+        border-bottom: 1px solid rgb(220, 219, 219);
+        left: -1px;
+        bottom: -1px;
+      }
+    }
+    &:nth-child(8) {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid rgb(220, 219, 219);
+        border-top: 1px solid rgb(220, 219, 219);
+        right: -1px;
+        top: -1px;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+      border: none;
+      &::after,
+      &::before {
+        border: none;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      border-bottom: 1px solid rgb(239, 239, 239);
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      border-right: 1px solid rgb(239, 239, 239);
+    }
+
+    &:nth-child(9) {
+      display: none;
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid rgb(220, 219, 219);
+        border-bottom: 1px solid rgb(220, 219, 219);
+        right: -1px;
+        bottom: -1px;
+      }
+    }
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-left: 1px solid rgb(220, 219, 219);
+        border-top: 1px solid rgb(220, 219, 219);
+        top: -1px;
+        left: -1px;
+      }
+    }
+  }
+}
