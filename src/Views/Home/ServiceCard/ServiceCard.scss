@@ -2,8 +2,8 @@
 
 .ServiceCard {
   background-color: white;
-  width: 300px;
-  height: 250px;
+  width: 350px;
+  height: 300px;
 
   &__face {
     display: flex;
@@ -48,7 +48,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 10px 0px 25px;
+    gap: 20px;
+    padding: 20px 20px 20px 35px;
+    p {
+      color: variables.$primaryColor;
+    }
     ul {
       display: flex;
       flex-direction: column;
@@ -89,7 +93,7 @@
     display: none;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     &:nth-child(1),
     &:nth-child(3),
     &:nth-child(5) {
@@ -128,7 +132,7 @@
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1250px) {
     &:nth-child(9) {
       display: flex;
     }
@@ -230,7 +234,7 @@
     }
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3),

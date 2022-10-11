@@ -4,7 +4,6 @@ import ActionBtn from "../../Components/ActionBtn";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 import ServiceCard from "./ServiceCard/ServiceCard";
-import SimonAbout from "../../assets/simonProfile.jpg";
 import { services } from "../../constants";
 import { Element, Link } from "react-scroll";
 
@@ -17,10 +16,10 @@ const Home = ({ myRef }) => {
             <div className="jumbotron__col-1">
               <Bounce duration={1500} left>
                 <div>
-                  <h1>Your local government sector expert</h1>{" "}
+                  <h1>Your local government sector expert</h1>
                   <Link
                     activeClass="active"
-                    to="about"
+                    to="services"
                     spy={true}
                     smooth={true}
                     offset={-80}
@@ -39,8 +38,12 @@ const Home = ({ myRef }) => {
               </Bounce>
             </div>
           </div>
+          <div className="attr">
+            <p>Source: NASA</p>
+          </div>
         </section>
         <Element name="services" className="services">
+          <h2>Services</h2>
           <div className="services__service-cards-container">
             {services.map((service) => (
               <ServiceCard service={service} />
@@ -51,12 +54,39 @@ const Home = ({ myRef }) => {
           </Fade>
         </Element>
         <Element name="about" className="about">
+          <h2>About</h2>
           <Fade up>
             <div className="about__content">
+              <div className="about__blurb">
+                Simon Markham Consulting was launched in early 2021 sensing that
+                the local government sector was about to go through its most
+                significant period of change since the 1989 reforms. Why is
+                that? Councils with a renewed wellbeings mandate face with their
+                communities a complex set of challenges in an increasingly
+                ‘VUCA’ world - volatile, uncertain, complex, and ambiguous.
+                <br />
+                <br />
+                The current local government system was established over 30
+                years ago with some discrete innovations since then. Key guiding
+                statutes are 20 or more years old. There is unmistakable
+                evidence of ‘system stress’. In response a wide range of new
+                policy and legislative initiatives are being launched. These
+                touch all aspects of how councils operate and partner with
+                others, while remaining sustainable and relevant in dealing with
+                an unprecedented set of pressures.
+                <br />
+                <br />
+                The current ‘reforms programme’ is quite unlike that of 1989 and
+                will unfold in much less certain ways for councils and
+                communities. It is a time of elevated risks but rich
+                opportunities.
+                <br />
+                <br />
+                SMC Ltd.’s mission is to work with all entities that impact
+                local governance to mitigate risks and realise opportunities for
+                communities.
+              </div>
               <div className="about__col-1">
-                <div className="about__profile-pic-container">
-                  <img src={SimonAbout} alt="Simon Markham" />
-                </div>
                 {/* <ul>
                   <li>
                     Passionate about community betterment through local
@@ -105,35 +135,6 @@ const Home = ({ myRef }) => {
                   </li>
                 </ul>
               </div>
-              <div className="about__blurb">
-                Simon Markham Consulting was launched in early 2021 sensing that
-                the local government sector was about to go through its most
-                significant period of change since the 1989 reforms. Why is
-                that? Councils with a renewed wellbeings mandate face with their
-                communities a complex set of challenges in an increasingly
-                ‘VUCA’ world - volatile, uncertain, complex, and ambiguous.
-                <br />
-                <br />
-                The current local government system was established over 30
-                years ago with some discrete innovations since then. Key guiding
-                statutes are 20 or more years old. There is unmistakable
-                evidence of ‘system stress’. In response a wide range of new
-                policy and legislative initiatives are being launched. These
-                touch all aspects of how councils operate and partner with
-                others, while remaining sustainable and relevant in dealing with
-                an unprecedented set of pressures.
-                <br />
-                <br />
-                The current ‘reforms programme’ is quite unlike that of 1989 and
-                will unfold in much less certain ways for councils and
-                communities. It is a time of elevated risks but rich
-                opportunities.
-                <br />
-                <br />
-                SMC Ltd.’s mission is to work with all entities that impact
-                local governance to mitigate risks and realise opportunities for
-                communities.
-              </div>
             </div>
           </Fade>
           <Fade up>
@@ -141,6 +142,7 @@ const Home = ({ myRef }) => {
           </Fade>
         </Element>
         <Element name="record" className="record">
+          <h2>Track Record</h2>
           <Fade up>
             <div className="record__content">
               <ul>
@@ -184,6 +186,63 @@ const Home = ({ myRef }) => {
                   partnering in trade services with VNZ Group Trade Services
                   Co., Ltd, Ho Chi Minh City, Vietnam{" "}
                 </li>
+              </ul>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className="section-divider" />
+          </Fade>
+        </Element>
+
+        <Element name="why" className="why">
+          <h2>Why SMC?</h2>
+          <Fade up>
+            <div className="why__content">
+              <ul>
+                <li>Wide and deep local government sector knowledge</li>
+                <li>
+                  Well-developed networks – ability to draw on associates with
+                  diverse skill
+                </li>
+                <li>
+                  Resources available for larger/more complex projects –{" "}
+                  <a href="www.morrisonsolutions.co.nz" target="_blank">
+                    www.morrisonsolutions.co.nz
+                  </a>
+                </li>
+                <li>
+                  Know how in the machinery of central and local government
+                  policy and legislative processes
+                </li>
+                <li>
+                  Capable and highly experienced policy and governance
+                  excellence advisor to Councils
+                </li>
+                <li>
+                  Skilled at preparing and presenting governance training to
+                  elected officials
+                </li>
+                <li>
+                  A skilled analyst, strategic planner, facilitator and engaging
+                  presenter – have given many presentations in New Zealand, and
+                  several in Australia and the US
+                </li>
+                <li>
+                  A credentialed and experienced Board and advisory board
+                  committee member
+                </li>
+                <li>
+                  A capable and adaptable leader of people, teams, and change
+                </li>
+                <li>
+                  Skilled at developing and managing relationships and engaging
+                  with peers and communities
+                </li>
+                <li>
+                  Proven success managing diverse, large-scale, and complex
+                  projects
+                </li>
+                <li>A highly experienced and versatile operational manager</li>
               </ul>
             </div>
           </Fade>

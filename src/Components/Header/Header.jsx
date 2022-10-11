@@ -58,7 +58,18 @@ const Header = ({ navBkg, handleToggleContactModal }) => {
               Track Record
             </Link>
           </li>
-
+          <li>
+            <Link
+              activeClass="active"
+              to="why"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              onClick={() => setOpenNav(false)}
+            >
+              Why SMC?
+            </Link>
+          </li>
           <li
             className="nav-contact-li"
             onClick={() => {

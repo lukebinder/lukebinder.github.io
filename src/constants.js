@@ -120,7 +120,7 @@ export const services = [
   {
     title: "Disaster Recovery",
     img: Disaster,
-    description: "Planning and managing disaster recovery",
+    description: "Planning and managing local disaster recovery",
 
     info: (
       <ul>

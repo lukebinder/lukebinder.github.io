@@ -35,7 +35,8 @@ const ServiceCard = ({ service }) => {
                 title
               )}`}
             >
-              {info}
+              <p className="ServiceCard__title">{title}</p>
+              <div>{info}</div>
             </div>
           </Fade>
         )}
