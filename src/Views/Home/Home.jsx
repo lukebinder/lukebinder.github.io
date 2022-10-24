@@ -39,7 +39,10 @@ const Home = ({ myRef }) => {
             </div>
           </div>
           <div className="attr">
-            <p>Source: NASA</p>
+            <p>
+              Source: NASA, 2006 - working on the International Space Station
+              above Te Waipounamu, the South Island
+            </p>
           </div>
         </section>
         <Element name="services" className="services">
@@ -206,7 +209,7 @@ const Home = ({ myRef }) => {
                 </li>
                 <li>
                   Resources available for larger/more complex projects –{" "}
-                  <a href="www.morrisonsolutions.co.nz" target="_blank">
+                  <a href="https://www.morrisonsolutions.co.nz" target="_blank">
                     www.morrisonsolutions.co.nz
                   </a>
                 </li>

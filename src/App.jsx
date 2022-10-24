@@ -22,10 +22,6 @@ const App = () => {
     setNavBkg(onScreen ? "transparent" : "black");
   }, [onScreen]);
 
-  useEffect(() => {
-    console.log(navBkg);
-  }, [navBkg]);
-
   const handleToggleContactModal = (toggle) => {
     setOpenContactModal(() => (toggle === "open" ? true : false));
   };
