@@ -16,7 +16,7 @@ const Home = ({ myRef }) => {
             <div className="jumbotron__col-1">
               <Bounce duration={1500} left>
                 <div>
-                  <h1>Your local government sector expert</h1>
+                  <h1>My mission is to make local government better</h1>
                   <Link
                     activeClass="active"
                     to="services"
@@ -87,7 +87,8 @@ const Home = ({ myRef }) => {
                 <br />
                 SMC Ltd.’s mission is to work with all entities that impact
                 local governance to mitigate risks and realise opportunities for
-                communities.
+                communities. In short, my mission is to make local government
+                better.
               </div>
               <div className="about__col-1">
                 {/* <ul>
@@ -128,9 +129,9 @@ const Home = ({ myRef }) => {
                     in NZ
                   </li>
                   <li>
-                    Associate Fellow, NZ Institute of Management; Chartered
-                    Member, NZ Institute of Directors; 10 years Board membership
-                    at Taituarā
+                    Associate Fellow, NZ Institute of Management (retd.);
+                    Chartered Member, NZ Institute of Directors; 10 years Board
+                    membership at Taituarā
                   </li>
                   <li>
                     Assisted a number of advisory boards and Committees,
@@ -167,7 +168,7 @@ const Home = ({ myRef }) => {
                 <li>
                   A successful Senior Manager with Waimakariri DC that holds an
                   AA rating by the LGNZ Local Government Excellence Programme -
-                  leading WDC with that programme{" "}
+                  leading WDC with that programme
                 </li>
                 <li>
                   Early 2021 established SMC Ltd with a strong interest in
@@ -180,14 +181,9 @@ const Home = ({ myRef }) => {
                   implementation projects
                 </li>
                 <li>
-                  Assisted a range of other parties, including working with a
-                  dozen Councils/Exec. Teams on reforms readiness and the future
+                  As one of several associates to Morrison Solutions, I have
+                  worked with ten Councils on reforms readiness and the future
                   for local government
-                </li>
-                <li>
-                  NZ-based Director for VNZ (NZ) Group Ltd., a start-up
-                  partnering in trade services with VNZ Group Trade Services
-                  Co., Ltd, Ho Chi Minh City, Vietnam{" "}
                 </li>
               </ul>
             </div>
@@ -206,12 +202,6 @@ const Home = ({ myRef }) => {
                 <li>
                   Well-developed networks – ability to draw on associates with
                   diverse skill
-                </li>
-                <li>
-                  Resources available for larger/more complex projects –{" "}
-                  <a href="https://www.morrisonsolutions.co.nz" target="_blank">
-                    www.morrisonsolutions.co.nz
-                  </a>
                 </li>
                 <li>
                   Know how in the machinery of central and local government

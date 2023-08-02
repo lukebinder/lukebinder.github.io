@@ -6,7 +6,7 @@ import Phone from "../../assets/phone.png";
 const Footer = () => {
   return (
     <footer className="Footer">
-      <div className="Footer__details">SMC 2022</div>
+      <div className="Footer__details">SMC 2023</div>
       <div className="Footer__contact">
         <a href="tel:+64 021 481 870">
           <img src={Phone} alt="tel:+64 021 481 870" />
